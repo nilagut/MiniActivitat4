@@ -29,7 +29,11 @@
             android:name="com.android.mdw.demo.ElServicio"
             android:enabled="true" />
 
-        <receiver android:name="com.android.mdw.demo.ElReceptor" />
+        <receiver android:name="com.android.mdw.demo.ElReceptor" >
+            <intent-filter>
+                <action android:name="android.intent.action.HEADSET_PLUG" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

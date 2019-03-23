@@ -19,6 +19,7 @@ public class ElServicio extends Service {
 	@Override
 	public void onCreate() {
 		Toast.makeText(this, R.string.creaserv, Toast.LENGTH_LONG).show();
+		player = MediaPlayer.create(this, R.raw.elteuviatge);
 	}
 
 	@Override
@@ -31,21 +32,24 @@ public class ElServicio extends Service {
 	public int onStartCommand(Intent intent, int flags, int startid) {
 		try {
 			player.stop();
-		}catch (Exception ex) {
+		} catch (Exception ex) {
 
 		} finally {
 
 		}
 		Toast.makeText(this, R.string.iniserv, Toast.LENGTH_LONG).show();
-		String accio = intent.getExtras().get("accio").toString();
-		if (accio.equals("Iniciar cancion")){
-			player = MediaPlayer.create(this, R.raw.elteuviatge);
-		} else if (accio.equals("Iniciar sonido")){
-			player = MediaPlayer.create(this, R.raw.train);
+		if (intent.hasExtra("accio")) {
+			String accio = intent.getExtras().get("accio").toString();
+			if (accio.equals("Iniciar cancion")) {
+				player = MediaPlayer.create(this, R.raw.elteuviatge);
+			} else if (accio.equals("Iniciar sonido")) {
+				player = MediaPlayer.create(this, R.raw.train);
+			}
 		}
-		player.setLooping(true);
-		player.start();
-		return startid;		
+			player.setLooping(true);
+			player.start();
+			return startid;
+
 	}
 
 
