@@ -1,6 +1,7 @@
 package com.android.mdw.demo;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,19 +31,19 @@ public class Main extends Activity implements OnClickListener {
 
     switch (src.getId()) {
     case R.id.btnCancion:
-      in = new Intent(this, ElServicio.class);
+      in = new Intent(this, ElReceptor.class);
       in.putExtra("accio", "Iniciar cancion");
       sendBroadcast(in);
       //startService(in);
       break;
       case R.id.btnSonido:
-        in = new Intent(this, ElServicio.class);
+        in = new Intent(this, ElReceptor.class);
         in.putExtra("accio", "Iniciar sonido");
         sendBroadcast(in);
         //startService(in);
         break;
     case R.id.btnFin:
-      in = new Intent(this, ElServicio.class);
+      in = new Intent(this, ElReceptor.class);
       in.putExtra("accio", "Detener");
       sendBroadcast(in);
       //stopService(in);
