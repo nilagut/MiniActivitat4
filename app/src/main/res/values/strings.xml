@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">ManejoServicios</string>
+    <string name="iniserv">Servicio Iniciado</string>
+    <string name="creaserv">Servicio Creado</string>
+    <string name="finaserv">Servicio Finalizado</string>
+    <string name="cancion">REPRODUCIR CANCIÓN</string>
+    <string name="sonido">REPRODUCIR SONIDO</string>
+    <string name="detener">DETENER</string>
+    <string name="bcstcancion">El receptor - inicio reproducción canción</string>
+    <string name="bcstsonido">El receptor - inicio reproducción sonido</string>
+    <string name="bcststop">El receptor - deteniendo reproducción</string>
+
+</resources>
