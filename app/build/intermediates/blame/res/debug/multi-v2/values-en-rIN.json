@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nilagut/Downloads/ManejoServicio-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "/Users/nilagut/AndroidStudioProjects/MiniActivitat4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/nilagut/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dac54bd225afea3664387fe148b473ed/res/values-en-rIN/values-en-rIN.xml",

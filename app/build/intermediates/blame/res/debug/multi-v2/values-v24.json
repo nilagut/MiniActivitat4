@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nilagut/Downloads/ManejoServicio-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/nilagut/AndroidStudioProjects/MiniActivitat4/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/nilagut/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/599c5e396963de0af6dc4357495a3b32/res/values-v24/values-v24.xml",

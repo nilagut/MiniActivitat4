@@ -11,7 +11,7 @@ public class ElReceptor extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         String action = (String) intent.getExtras().get("accio");
-        int state =(Integer) intent.getExtras().get("state");
+        int state = intent.getIntExtra("state", -1);
 
         Intent in = new Intent(context, ElServicio.class);
         in.putExtra("accio", action);
