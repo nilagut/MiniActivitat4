@@ -38,12 +38,14 @@ public class ElReceptor extends BroadcastReceiver {
         }
                 else if (action.equals("Iniciar cancion")) {
                     Toast.makeText(context, R.string.bcstcancion, Toast.LENGTH_LONG).show();
+                    context.startService(in);
 
                 } else if (action.equals("Iniciar sonido")) {
                     Toast.makeText(context, R.string.bcstsonido, Toast.LENGTH_LONG).show();
+                    context.startService(in);
                 }
 
-                context.startService(in);
+
             }
 
     }

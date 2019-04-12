@@ -26,18 +26,16 @@ public class ElServicio extends Service {
 	public void onDestroy() {
 		Toast.makeText(this, R.string.finaserv, Toast.LENGTH_LONG).show();
 		player.stop();
+
 	}
 	
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startid) {
-		try {
-			player.stop();
-		} catch (Exception ex) {
 
-		} finally {
+		if (player.isPlaying()){player.stop();}
 
-		}
 		Toast.makeText(this, R.string.iniserv, Toast.LENGTH_LONG).show();
+
 		if (intent.hasExtra("accio")) {
 			String accio = intent.getExtras().get("accio").toString();
 			if (accio.equals("Iniciar cancion")) {
